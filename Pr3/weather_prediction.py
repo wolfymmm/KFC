@@ -1,9 +1,6 @@
-from datetime import datetime
-from ml_model import train_model, predict_wind
-from db import get_weather_data
-import pandas as pd
 import matplotlib.pyplot as plt
-import numpy as np
+import pandas as pd
+from ml_model import predict_wind
 
 
 def get_filtered_data(df, selected_country, start_future, end_future):
@@ -55,9 +52,6 @@ def forecast_weather(df_country, df_model, model, start_future, end_future):
         forecast_data["real_feelslike"].append(real_feelslike)
 
     return forecast_data
-
-
-
 
 
 def plot_detailed_forecast(forecast_data):

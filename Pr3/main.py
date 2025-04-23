@@ -1,5 +1,5 @@
 from datetime import datetime
-from ml_model import train_model, predict_wind
+from ml_model import train_model
 from db import get_weather_data
 
 from weather_prediction import (
