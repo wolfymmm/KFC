@@ -39,7 +39,7 @@ def forecast_weather(df_country, df_model, model, start_future, end_future):
 
         real = df_country[df_country['date'] == d.date()]
 
-        # Отримуємо значення, або None, якщо відсутні
+        # Отримуємо значення, або ні, якщо відсутні
         real_wind = real['wind_kph'].values[0] if not real['wind_kph'].isna().all() else None
         real_temp = real['temperature_celsius'].values[0] if not real['temperature_celsius'].isna().all() else None
         real_feelslike = real['feels_like_celsius'].values[0] if 'feels_like_celsius' in real.columns and not real[
