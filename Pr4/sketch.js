@@ -1,4 +1,4 @@
-// this code should be runned in p5.js
+
 let sigma = 10;
 let rho = 28;
 let beta = 8 / 3;
@@ -9,7 +9,7 @@ let attractors = [];
 let num = 20;
 
 function setup() {
-  createCanvas(600, 400, WEBGL);
+  createCanvas(1680, 1000, WEBGL);
   frameRate(60);
 
   for (let i = 0; i < num; i++) {
